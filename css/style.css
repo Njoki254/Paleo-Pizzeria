@@ -1,0 +1,31 @@
+body{
+  font-family: latha;
+  color: white;
+  background-color: black;
+  background-size:cover;
+
+}
+.carousel-inner{
+  width: 75%;
+  height: 60%;
+  image-orientation: right;
+  float: right;
+
+}
+
+.box{ width: 900px;
+float:right;
+border:1px solid black;
+}
+
+.box ul li{
+  width: 120px;
+  float:left;
+}
+.order{
+  color: black;
+  text-decoration-color: yellow;
+}
+.categories{
+  color: white;
+}

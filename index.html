@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Paleo-Pizzeria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class = "box">
+    <ul>
+      <li><a href=""> Home </a></li>
+      <li><a href=""> Menu</a></li>
+      <li><a href=""> Online Order </a></li>
+      <li><a href=""> Team </a></li>
+      <li><a href=""> Contact</a></li>
+      </ul>
+    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="./images/wine.jpg" alt="Pizza with wine" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="./images/cheezy.jpg" alt="cheezy pizza" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="./images/friends.jpg" alt="Friends Pizza Party" style="width:100%;">
+        </div>
+        <div class="item">
+          <img src="./images/gloves.jpg" alt="the chef" style="width:100%;">
+        </div>
+        <div class="item">
+          <img src="./images/hawaiian.jpg" alt="Hawaiian" style="width:100%;">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      </div>
+    </div>
+
+
+<div class = "wd">
+  <h1><br>
+    <br> WELCOME!</h1>
+
+  <h4> Our Pizza recipes are consistent with a healthy Paleo diet.<br>
+    A paleo diet is a dietary plan based on foods similar to what might have been eaten during the</br>
+    Paleolithic era, which dates from approximately 2.5 million to 10,000 years ago.
+
+A paleo diet typically includes lean meats, fish, fruits, vegetables, nuts and seeds — foods that in the past could be obtained by hunting and gathering. This means all our pizza
+<br>recipes are dairy and gluten free!</h4>
+
+<h2>PLACE YOUR PIZZA ORDER</h2>
+<form action= 'mailto: njokifaith61@gmail.com' method = 'post'>
+<table class= "order">
+  <tr>
+    <td class ="categories"> Your Name </td>
+    <td>
+      <input type = 'text' name = 'name' size = '30'/ class= "categories">
+    </td>
+  <tr>
+    <td class = "categories">Phone : </td>
+    <td>
+       <input type = 'text' name = 'ph' size = '30' maxlength ='10' value = 'A number you can ring'/>
+     </td>
+  </tr>
+  <tr>
+      <td class = "categories"><b>Size</b></td>
+  </tr>
+  <tr>
+      <td class = "categories">Family</td>
+      <td>
+        <input type = 'radio'  name ='size' value = 'family'/>
+      </td>
+  </tr>
+  <tr>
+      <td class = "categories">Large</td>
+      <td>
+        <input type = 'radio'  name ='size' value = 'Large' />
+      </td>
+  </tr>
+  <tr>
+      <td class = "categories">Medium</td>
+      <td>
+        <input type = 'radio'  name ='size' value = 'Medium'/>
+      </td>
+  </tr>
+  <tr>
+      <td class = "categories">Small</td>
+      <td>
+        <input type = 'radio'  name ='size' value = 'Small'/>
+      </td>
+  </tr>
+  <tr>
+      <td class = "categories">
+          How Many?
+      </td>
+      <td>
+          <input type = 'text' name 'howmany' size '4' />
+      </td>
+  </tr>
+  <tr>
+      <td class = "categories"> Type? </td>
+      <td>
+          <select name = 'type' size '4' multiple ='multiple'>
+            <option value = ''>Peri Peri Chicken</option>
+            <option value = ''>Hawaiian</option>
+            <option value = ''>Peperroni</option>
+            <option value = ''>BBQ Chicken</option>
+            <option value = ''>Margarita</option>
+            <option value = ''>Vegetarian</option>
+          </select>
+      </td>
+  </tr>
+  <td>
+      <td class = "categories">Pickup?</td>
+      <td rowspan = '2'>
+         <input type= 'radio' name = 'pickuporder' class = "categories"/>
+         <input type= 'radio' name = 'deliver' class = "categories"/>
+      </td>
+  <tr>
+    <td>
+        <b class = "categories">Delivery Address</br>
+        <input  type = 'text' name = 'ph' size = '10' maxlength ='40' value = 'delivery address'/>
+    </td>
+  </tr>
+  <tr>
+      <td class = "categories">Delivery Time</td>
+      <td>
+      <select name = 'Delivery Time' class = "order">
+          <option value = '5.30' > '5.30'</option>
+          <option value = '6.30' > '6.30'</option>
+          <option value = '7.30' > '7.30'</option>
+          <option value = '8.30' > '8.30'</option>
+          <option value = '9.30' > '9.30'</option>
+      </select>
+    <tr>
+      <td>
+        <input type = 'submit' value = 'submit order' class = "order" />
+        <input type = 'reset' value ='reset order' class = "order" />
+      </td>
+    </tr>
+
+</table>
+</form>
+
+
+<h2> CONTACT FOR RESERVATION OR ENQUIRIES</h2>
+
+<h3><strong>Call +254745678910 to Reserve a Table</strong></h3>
+
+
+
+
+
+
+
+<section id="menu" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+				<h1 class="heading">MENU</h1>
+				<hr>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<h4>Lemon-Rosemary Vegetable ................ <span>Kshs 1000 L, Kshs 700 M, Kshs 450 S</span></h4>
+				<h5>Chicken / Rosemary / Lemon</h5>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<h4>Lemon-Rosemary Meat ........................... <span>Kshs 1000 L, Kshs 700 M, Kshs 450 S</span></h4>
+				<h5>Meat / Rosemary / Lemon</h5>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<h4>Lemon-Rosemary Pork ........................<span>Kshs 1000 L, Kshs 700 M, Kshs 450 S</span></h4>
+				<h5>Pork / Tooplate / Lemon</h5>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<h4>Orange-Rosemary Salad .......................... <span>Kshs 1000 L, Kshs 700 M, Kshs 450 S</span></h4>
+				<h5>Salad / Rosemary / Orange</h5>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<h4>Lemon-Rosemary Squid ...................... <span>Kshs 1000 L, Kshs 700 M, Kshs 450 S</span></h4>
+				<h5>Squid / Rosemary / Lemon</h5>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<h4>Orange-Rosemary Shrimp ........................ <span>Kshs 1000 L, Kshs 700 M, Kshs 450 S</span></h4>
+				<h5>Shrimp / Rosemary / Orange</h5>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<h4>Lemon-Rosemary Prawn ................... <span>Kshs 1000 L, Kshs 700 M, Kshs 450 S</span></h4>
+				<h5>Chicken / Rosemary / Lemon</h5>
+			</div>
+			<div class="col-md-6 col-sm-6">
+        <h3> Extra Toppings</h3>
+				<h5>Extra Dairy free cheese/ Guacamole/<br>
+           chicken strips/ Bacon/Olives/Mushrooms/ Rosemary</h5>...........<strong>Kshs 100 Each</strong></h4>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+  </body>
+</html>
