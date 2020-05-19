@@ -20,7 +20,7 @@ body{
 
 }
 .welcome{
-  color: grey;
+  color: silver;
 }
 .navbar{
   font-size:30px;
@@ -40,7 +40,7 @@ body{
   background-image: url("../images/hotel.jpg");
   background-size: cover;
   background-repeat:
-  color: grey;
+  color: azure;
 }
 
 .wd h4{
@@ -48,7 +48,7 @@ body{
   margin: 20px;
   padding-bottom: 20px;
   font-size: 30px;
-  color: grey;
+  color: silver;
 }
 .carousel-inner{
   display:block;
@@ -62,7 +62,7 @@ body{
   color: black;
 }
 .welcome{
-  color: grey;
+  color: silver;
 }
 .box{ width: 900px;
 border:i px solid white;
