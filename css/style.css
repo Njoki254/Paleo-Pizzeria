@@ -1,31 +1,112 @@
 body{
-  font-family: latha;
-  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
   background-color: black;
   background-size:cover;
+  background-image:);
+  text-align: center;
 
+}
+.logo{
+  width: 50px
+  height: 50px;
+}
+.title {
+  font-family: lobster;
+  font-style: italic;
+  font-size;50px
+  text-align: center;
+
+
+}
+.welcome{
+  color: grey;
+}
+.navbar{
+  font-size:30px;
+  color: white;
+  font-style:
+  padding right: 30px;
+  padding left: 20px;
+}
+.navbar a{
+  color:white;
+}
+.wd{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  text-align: center;
+  background-image: url("../images/lights.jpg");
+  background-size: cover;
+  background-repeat:
+  color: grey;
+}
+
+.wd h4{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
 }
 .carousel-inner{
-  width: 75%;
-  height: 60%;
-  image-orientation: right;
-  float: right;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  image-orientation: center;
+  width: 70%;
 
 }
-
+.glyphicon-glyphicon-chevron-right{
+  color: black;
+}
+.welcome{
+  color: grey;
+}
 .box{ width: 900px;
-float:right;
-border:1px solid black;
+border:i px solid white;
 }
 
 .box ul li{
   width: 120px;
-  float:left;
 }
 .order{
   color: black;
   text-decoration-color: yellow;
+
+  margin: auto;
+}
+.headings{
+  font-size: 30px;
+  color:white;
 }
 .categories{
   color: white;
+  font-size: 25px;
+  text-align: center;
+}
+.navbar{
+  color:white;
+  text-decoration-color: white;
+  margin-right: auto;
+}
+.container{
+  background-color: black;
+  color:white;
+}
+.container-order{
+  margin: auto;
+  text-align: left;
+  background-image: url("../images/lights.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contact{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.container-text-center-footer{
+  background-color: black;
+  color:white;
 }
