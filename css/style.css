@@ -37,7 +37,7 @@ body{
   padding-bottom: 10px;
   letter-spacing: 2px;
   text-align: center;
-  background-image: url("../images/lights.jpg");
+  background-image: url("../images/hotel.jpg");
   background-size: cover;
   background-repeat:
   color: grey;
@@ -48,6 +48,7 @@ body{
   margin: 20px;
   padding-bottom: 20px;
   font-size: 30px;
+  color: grey;
 }
 .carousel-inner{
   display:block;
@@ -97,9 +98,13 @@ border:i px solid white;
 .container-order{
   margin: auto;
   text-align: left;
-  background-image: url("../images/lights.jpg");
+  background-image: url("../images/hotel.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  color: ;
+}
+.custom-control, .custom-checkbox .custom-control-inline .label{
+  color:white;
 }
 #contact{
   background-color: black;
@@ -108,5 +113,14 @@ border:i px solid white;
 }
 .container-text-center-footer{
   background-color: black;
+  color:white;
+}
+.order{
+  color: black;
+}
+.topping{
+  color:white;
+}
+.custom-control-input{
   color:white;
 }

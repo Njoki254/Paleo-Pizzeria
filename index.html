@@ -66,10 +66,10 @@
   <h1 class= "welcome"><br>
     <br class= "welcome"> WELCOME!</h1>
 
-  <h4> Paleo Pizzeria that has been in pizza business for over 10years now. offers a very unique atmosphere for customers in
+  <h4><strong> Paleo Pizzeria that has been in pizza business for over 10 years now, offers a very unique atmosphere for customers in
               addition to home delivery services for all pizza orders. Our Pizzas are freshly and passionately baked by the best chefs in Kenya
      All recipes are consistent with a healthy Paleo<br>
-     diet, Gluten and Dairy free!!!</h4></div>
+     diet, Gluten and Dairy free!!!</strong></h4></div>
      <section id="menu" class="parallax-section">
      	<div class="container">
      		<div class="row">
@@ -115,95 +115,51 @@
     <div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
 <h2>PLACE YOUR PIZZA ORDER</h2>
   <form action= 'mailto: njokifaith61@gmail.com' method = 'post' class= "order">
-  <table class= "order">
+                  <label class="label"for="select">Select Your Flavor</label>
+                  <select class="browser-default custom-select custom-select-md mb-3 name">
+                    <!-- <option selected value="choose">Choose your flavor</option> -->
+                    <option value="Chicken Tikka">Hawaiian </option>
+                    <option value="PeriPeri Pizza">PeriPeri Chicken</option>
+                    <option value="Raspberry Dessert Pizza">Pepperoni/option>
+                    <option value="Chicken Alfredo Pizza">Margarita</option>
+                    <option value="Sunchoke Pizza">Vegetarian</option>
+                  </select>
+                <label class="label"for="select">Select Size</label>
+                <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                  <option selected value="0">Select size here</option>
+                  <option value="large">Large -- sh. 100</option>
+                  <option value="medium">Medium -- sh. 700</option>
+                  <option value="small">Small -- sh. 450</option>
+                </select>
+                <label class="label" for="crust">Choose your favorite Crust!</label>
+                  <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                      <option selected value="0">Select your preferred crust!</option>
+                    <option value="Crispy">Crispy -- sh. 100</option>
+                    <option value="Stuffed">Stuffed -- sh. 100</option>
+                    <option value="Gluten-free">Soft-- sh. 100</option>
+                  </select>
 
-    <tr>
-      <td class ="categories"> Your Name </td>
-      <td>
-      <input type = 'text' name = 'name' size = '30'/ class= "categories">
-      </td>
-   <tr>
-      <td class = "categories">Phone : </td>
-      <td>
-       <input type = 'text' name = 'ph' size = '30' maxlength ='10' value = #>
-     </td>
-  </tr>
-  <tr>
-      <td class = "headings"><strong>Size</strong></td>
-  </tr>
-  <tr>
-      <td class = "categories">Family</td>
-      <td>
-        <input type = 'radio'  name ='size' value = 'family'/>
-      </td>
-  </tr>
-  <tr>
-      <td class = "categories">Large</td>
-      <td>
-        <input type = 'radio'  name ='size' value = 'Large' />
-      </td>
-  </tr>
-  <tr>
-      <td class = "categories">Medium</td>
-      <td>
-        <input type = 'radio'  name ='size' value = 'Medium'/>
-      </td>
-  </tr>
-  <tr>
-      <td class = "categories">Small</td>
-      <td>
-        <input type = 'radio'  name ='size' value = 'Small'/>
-      </td>
-  </tr>
-  <tr>
-      <td class = "headings">
-          Pieces?
-      </td>
-      <td>
-          <input type = 'text' name 'howmany' size '4' />
-      </td>
-  </tr>
-  <tr>
-      <td class = "headings"> Type? </td>
-      <td>
-          <select name = 'type' size '4' multiple ='multiple'>
-            <option value = ''>Peri Peri Chicken</option>
-            <option value = ''>Hawaiian</option>
-            <option value = ''>Peperroni</option>
-            <option value = ''>BBQ Chicken</option>
-            <option value = ''>Margarita</option>
-            <option value = ''>Vegetarian</option>
-          </select>
-      </td>
-  </tr>
-  <td>
-  <tr>
-    <td class = "headings">
-        Delivery Address
-    </td>
-    <td>
-        <input type = 'text' name 'delivery' size '10' />
-    </td>
-  </tr>
-  <tr>
-      <td class = "headings">Delivery Time</td>
-      <td>
-      <select name = 'Delivery Time' class = "order">
-          <option value = '5.30' > '5.30'</option>
-          <option value = '6.30' > '6.30'</option>
-          <option value = '7.30' > '7.30'</option>
-          <option value = '8.30' > '8.30'</option>
-          <option value = '9.30' > '9.30'</option>
-      </select>
-    <tr>
-      <td>
-        <input type = 'submit' value = 'submit order' class = "order" />
-        <input type = 'reset' value ='reset order' class = "order" />
-      </td>
-    </tr>
+                <h4 class= "topping">Toppings</h4>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+                    <label class="custom-control-label" for="Sausage">Sausage</label>
+                  </div>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="guacomole" value="guacomole" name="toppings">
+                    <label class="custom-control-label" for="guacomole">guacamole</label>
+                  </div>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+                    <label class="custom-control-label" for="Bacon">Bacon</label>
+                  </div>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+                    <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
+                  </div>
+                  <br><br>
+                <button type="submit" class="btn btn-orange proceed">Proceed</button>
 
-   </table>
- </form>
+              </form>
  <div id="information">
                <p>Your order will be processed and delivered within one hour of placing.<br>
                Make sure you have the total amout for the order during order delivery delivery<br>
