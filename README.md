@@ -7,7 +7,8 @@
 ## Description
 This is a project about creating websites for restaurants in which customers can order for food. Websites are suitable for businesses if one is trying to widen their customer base.In the web application, customers can order different sizes of pizzas with one or more toppings.
 
-## Features
+## BDD
+
 1. One can determine the prices for each pizza size.
 2. Each pizza topping has a set value depending on the size of the pizza.
 3. The cost for the crust

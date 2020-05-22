@@ -1,11 +1,119 @@
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  color:white;
-  background-color: black;
-  background-size:cover;
-  background-image:);
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Poppins:ital,wght@0,400;0,600;1,300;1,400;1,500&family=Righteous&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
+body{
+  background-color: lightcyan;
+  font-size: 20px;
+  font-style: normal;
+  }
+}
+#brand img{
+  height:50px;
+  width: 50px;
+}
+
+header {
+    background-color: silver;
+    color:black;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-around;
+    float: right;
+    align-items: left;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 28px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: black;
+    padding: 5px, 20px;
+
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: lightcyan;
+    position: absolute;
+    top: 0;
+    width: 0;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.content {
+    max-width: 500;
+    margin: auto;
+    background-color:lightcyan;
+    padding: 10px;
+
+}
+
+.content h1,
+h2,
+p,
+ul {
+    text-align: center;
+}
+
+.iframe-container iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+#logo{
+  font-size:40px;
+}
+#brand{
+  height: 50px;
+  width: 50px;
+}
+#MENU{
+  color:black;
+}
+.col-md-6 {
+color:black;
+}
+
 
 .title {
   font-family: lobster;
@@ -14,26 +122,36 @@ body{
   text-align: center;
 }
 .welcome{
-  color: silver;
+  color: black;
 }
 .navbar{
   font-size:30px;
-  color: white;
+  color: black;
   font-style:
   padding right: 30px;
   padding left: 20px;
-  text-decoration-color: white;
+  text-decoration-color: black;
   margin-right: auto;
 }
 .navbar a{
-  color:white;
+  color:black;
 }
 .wd{
   font-family: Arial, Helvetica, sans-serif;
   padding-bottom: 10px;
   letter-spacing: 2px;
   text-align: center;
-  background-image: url("../images/hotel.jpg");
+  background-image: url("../images/pizza3.jpg");
+  background-size: cover;
+  background-repeat:
+  color: azure;
+}
+#about-us{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  text-align: center;
+  background-image: url("../images/pizza3.jpg");
   background-size: cover;
   background-repeat:
   color: azure;
@@ -69,41 +187,41 @@ border:i px solid white;
   color:silver;
 }
 .container{
-  background-color: black;
-  color:white;
+  background-color: lightcyan;
+  color:black;
 }
-.container-order{
+#order{
   margin: auto;
   text-align: left;
-  background-image: url("../images/hotel.jpg");
+  background-image: url("../images/pizza3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
 }
 .custom-control, .custom-checkbox .custom-control-inline .label{
-  color:white;
+  color:black;
 }
 #make-order{
-  background-image: url("../images/hotel.jpg");
+  background-image: url("../images/pizza3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color:black;
 }
 .label{
-  color: white;
+  color: black;
 }
 .minicat{
-  color:white;
+  color:black;
 }
 .pizzacheckoutdelivery{
   color: black;
 }
 #contact{
   background-color: black;
-  color: white;
+  color: black;
   text-align: center;
 }
 .container-text-center-footer{
   background-color: black;
-  color:white;
+  color:black;
 }

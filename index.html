@@ -1,256 +1,257 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Paleo-Pizzeria</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<html>
+<head>
+	<title>Paleo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="cache-control" content="no-cache">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+
+    <!--Personal CSS-->
+
+
+    <!--Personal JS-->
+    <script src="js/script.js"></script>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="./css/style.css" rel="stylesheet" type="text/css">
-    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
-  </head>
+
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/a097096ef6.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
   <body>
-  <!--Navigation Bar -->
-  <div class="navbar">
-    <a class="#ABOUTUS" href="#home">About</a>
-    <a href="#MENU">Menu</a>
-    <a href="#PLACEYOURPIZZAORDER">Order</a>
-    <a href="#contact">Contact</a>
-  </div>
-  <!--Company Name -->
-    <h1 class="title">Paleo Pizzeria</h1>
-  <!--Carousel-->
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="./images/wine.jpg" alt="Pizza with wine" style="width:100%;">
-      </div>
+    <header>
+		<div class="header">
+			<img id="brand" alt="" src="images/logo.png">&nbsp;&nbsp;&nbsp;
+			<div class="logo">
+				<h4 id="logo"><strong>Paleo Pizza</strong></h4>
+			</div>
+			<nav class="container-fluid">
+				<ul>
+					<li>
+						<a href="#ABOUTUS"id="play"><strong>About</strong></a>
+					</li>
+					<li>
+						<a href="#MENU" id="instructions"><strong>Menu</strong></a>
+					</li>
+          <li>
+						<a href="#ORDER"id="play"><strong>Order</strong></a>
+					</li>
+					<li>
+						<a href="#CONTACTUS" id="instructions"><strong>Contact</strong></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+  <div id="container-fluid" id="features">
+    <div class="container">
+<!--Carousel section-->
+<div class="container" id="carousel">
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="./images/wine.jpg" alt="Pizza with wine" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="./images/hawaiian.jpg" alt="Hawaiian" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="./images/friends.jpg" alt="Friends Pizza Party" style="width:100%;">
+          </div>
+          <div class="item">
+            <img src="./images/ingredients.jpg" alt="ingredients" style="width:100%;">
+          </div>
+        </div>
 
-      <div class="item">
-        <img src="./images/friends.jpg" alt="Friends Pizza Party" style="width:100%;">
-      </div>
-      <div class="item">
-        <img src="./images/gloves.jpg" alt="the chef" style="width:100%;">
-      </div>
-  </div>
-
-      <!-- Left and right controls -->
-      <a class="left-carousel-control" href="#myCarousel" data-slide="prev">
+          <!-- Left and right controls -->
+          <a class="left-carousel-control" href="#myCarousel" data-slide="prev">
 
 
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
 
 
-      </a>
-    </div>
-  </div>
-
-<!--About Us-->
-<div class = "wd">
-  <h1 class= "welcome"><br>
-    <br class= "welcome" id="ABOUTUS"><strong> ABOUT US</strong></h1>
-
-  <h4><strong> Paleo Pizzeria that has been in pizza business for over 10 years now, offers a very unique atmosphere for customers in
-              addition to home delivery services for all pizza orders. Our Pizzas are freshly and passionately baked by the best chefs in Kenya
-     All recipes are consistent with a healthy Paleo<br>
-     diet, Gluten and Dairy free!!!</strong></h4></div>
-     <section id="menu" class="parallax-section">
-     	<div class="container">
-     		<div class="row">
-     			<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
-  <!--Menu-->
-     				<h1 class="heading" id="MENU">MENU</h1>
-     				<hr>
-     			</div>
-     			<div class="col-md-6 col-sm-6">
-     				<h4>Peri Peri Chicken ................ <span>Kshs 2500, Kshs 1000 L, Kshs 700 M, Kshs 450 S</span></h4>
-     				<h5>Chicken / Dairy Free Cheese / bell peppers</h5>
-     			</div>
-     			<div class="col-md-6 col-sm-6">
-     				<h4>Hawaiian ........................... <span>Kshs 2500, Kshs 1000 L, Kshs 700 M, Kshs 450 S</span></h4>
-     				<h5>Pinneaple/ Ham /Dairy Free Cheese</h5>
-     			</div>
-     			<div class="col-md-6 col-sm-6">
-     				<h4>Margarita ........................<span> Kshs 2500 F, Kshs 1000 L, Kshs 700 M, Kshs 450 S</span></h4>
-     				<h5>Onion/ Garlic cloves/ San Marzano</h5>
-     			</div>
-     			<div class="col-md-6 col-sm-6">
-     				<h4>Pepperoni ........................ <span>Kshs 2500 F, Kshs 1000 L, Kshs 700 M, Kshs 450 S</span></h4>
-     				<h5>Dairy Free Cheese / Rosemary / Peperroni</h5>
-     			</div>
-     			<div class="col-md-6 col-sm-6">
-     				<h4>Vegetarian ...................... <span>Kshs 2500 F, Kshs 1000 L, Kshs 700 M, Kshs 450 S</span></h4>
-     				<h5>bell peppers / grilled onions / zuchini</h5>
-     			</div>
-     			<div class="col-md-6 col-sm-6">
-     				<h4>Choose your own mix of toppings ................. <span> Kshs 2500 F, Kshs 1000 L, Kshs 700 M, Kshs 450 S</span></h4>
-     				<h5>Shrimp / Rosemary / Orange</h5>
-     			</div>
-     			<div class="col-md-6 col-sm-6">
-             <h3> Extra Toppings</h3>
-     				<h5>Extra Dairy free cheese/ Guacamole/<br>
-                chicken strips/ Bacon/Olives/Mushrooms/ Rosemary</h5>
-     	  </div>
+          </a>
       </div>
     </div>
-  </section>
+  </div>
 </div>
-  <!--Order Section-->
+</div>
+<!--End of Carousel-->
+<!-Beggining of About us section-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+      <div id="about-us">
+          <h1 class= "welcome"><br>
+            <br class= "welcome" id="ABOUTUS"><strong> ABOUT US</strong></h1>
 
+          <h4><strong> Paleo Pizzeria that has been in pizza business for over 10 years now, offers a very unique atmosphere for customers in
+                      addition to home delivery services for all pizza orders. Our Pizzas are freshly and passionately baked by the best chefs in Kenya
+             All recipes are consistent with a healthy Paleo<br>
+             diet, Gluten and Dairy free!!!</strong></h4>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Begining of Menu Section-->
 
+<div class="container" id="MENU">
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+      <section id="menu" class="parallax-section">
+      	<div class="container">
+      		<div class="row">
+      			<div class="col-md-offset-2 col-md-8 col-sm-12 text-center">
+   <!--Menu-->
+      				<h1 class="heading" id="MENU">MENU</h1>
+      				<hr>
+      			</div>
+      			<div class="col-md-6 col-sm-6">
+      				<h4>Peri Peri Chicken ................ <span>Kshs 2500, Kshs 1000 L, Kshs 700 M, Kshs 450 S</span></h4>
+      				<h5>Chicken / Dairy Free Cheese / bell peppers</h5>
+      			</div>
+      			<div class="col-md-6 col-sm-6">
+      				<h4>Hawaiian ........................... <span>Kshs 2500, Kshs 1000 L, Kshs 700 M, Kshs 450 S</span></h4>
+      				<h5>Pinneaple/ Ham /Dairy Free Cheese</h5>
+      			</div>
+      			<div class="col-md-6 col-sm-6">
+      				<h4>Margarita ........................<span> Kshs 2500 F, Kshs 1000 L, Kshs 700 M, Kshs 450 S</span></h4>
+      				<h5>Onion/ Garlic cloves/ San Marzano</h5>
+      			</div>
+      			<div class="col-md-6 col-sm-6">
+      				<h4>Pepperoni ........................ <span>Kshs 2500 F, Kshs 1000 L, Kshs 700 M, Kshs 450 S</span></h4>
+      				<h5>Dairy Free Cheese / Rosemary / Peperroni</h5>
+      			</div>
+      			<div class="col-md-6 col-sm-6">
+      				<h4>Vegetarian ...................... <span>Kshs 2500 F, Kshs 1000 L, Kshs 700 M, Kshs 450 S</span></h4>
+      				<h5>bell peppers / grilled onions / zuchini</h5>
+      			</div>
+      			<div class="col-md-6 col-sm-6">
+      				<h4>Choose your own mix of toppings ................. <span> Kshs 2500 F, Kshs 1000 L, Kshs 700 M, Kshs 450 S</span></h4>
+      				<h5>Shrimp / Rosemary / Orange</h5>
+      			</div>
+      			<div class="col-md-6 col-sm-6">
+              <h3> Extra Toppings</h3>
+      				<h5>Extra Dairy free cheese/ Guacamole/<br>
+                 chicken strips/ Bacon/Olives/Mushrooms/ Rosemary</h5>
+      	  </div>
+       </div>
+     </div>
+   </section>
+    </div>
+  </div>
+</div>
+</div>
 
-    <div class="container fluid-order" id="make-order">
-      <div class="row">
-        <div class="col-sm-5">
-              <h2 id="PLACEYOURPIZZAORDER" class= "headings"><u><strong>PLACE YOUR PIZZA ORDER</strong></u></h2>
-          <form action="">
-         <label for="select" class= "label">Select Your Flavor</label>
-         <select class="browser-default custom-select custom-select-md mb-3 name">
-           <!-- <option selected value="choose">Choose your flavor</option> -->
-           <option value="Peri Peri Chicken">Perri Perri Chicken</option>
-           <option value="Barbeque">Barbeque Chicken</option>
-           <option value="Peperroni">Peperroni</option>
-           <option value="Vegetarian">Vegetarian</option>
-           <option value="Magharita">Magharita</option>
-           <option value="Hwaiian">Hawaiian</option>
-         </select>
-       <label for="select" class= "label">Select Size</label>
-       <select class="browser-default custom-select custom-select-md mb-3" id="size">
-         <option selected value="0">Select size here</option>
-         <option value="large">Family -- Kshs. 2500</option>
-         <option value="large">Large -- Kshs. 1000</option>
-         <option value="medium">Medium -- Kshs. 700</option>
-         <option value="small">Small -- Kshs. 4500</option>
+<!--Beginning of Order Section-->
+<div class="container" id="carousel">
+  <div class="row">
+    <div class="col-md-12 col-sm-12" id="order">
+      <h2 id="PLACEYOURPIZZAORDER" class= "headings"><u><strong>PLACE YOUR PIZZA ORDER</strong></u></h2>
+        <form action="">
+       <label for="select" class= "label">Select Your Flavor</label>
+       <select class="browser-default custom-select custom-select-md mb-3 name">
+         <!-- <option selected value="choose">Choose your flavor</option> -->
+         <option value="Peri Peri Chicken">Perri Perri Chicken</option>
+         <option value="Barbeque">Barbeque Chicken</option>
+         <option value="Peperroni">Peperroni</option>
+         <option value="Vegetarian">Vegetarian</option>
+         <option value="Magharita">Magharita</option>
+         <option value="Hwaiian">Hawaiian</option>
        </select>
-       <label for="crust" class= "label">Choose your favorite Crust!</label>
-         <select class="browser-default custom-select custom-select-md mb-3" id="crust">
-          <option selected value="0">Select your preferred crust!</option>
-           <option value="Crispy">Crispy -- sh. 200</option>
-           <option value="Stuffed">Stuffed -- sh. 150</option>
-           <option value="Gluten-free">Soft-- sh. 180</option>
-         </select>
-       <label for="Toppings" class="label">Select Your Toppings at sh. 50 each</label><br>
-         <div class="custom-control custom-checkbox custom-control-inline">
-           <input type="checkbox" class="custom-control-input" id="Guacomole" value="Guacomole" name="toppings">
-           <label class="custom-control-label" for="Guacomole">Guacomole</label>
-         </div>
-         <div class="custom-control custom-checkbox custom-control-inline">
-           <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
-           <label class="custom-control-label" for="Sausage">Sausage</label>
-         </div>
-         <div class="custom-control custom-checkbox custom-control-inline">
-           <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
-           <label class="custom-control-label" for="Bacon">Bacon</label>
-         </div>
-         <div class="custom-control custom-checkbox custom-control-inline">
-           <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
-           <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
-         </div>
-         <br><br>
-       <button type="submit" class="btn btn-orange proceed">Proceed</button>
-     </form>
-   </div>
-   <div class="col-sm-7">
-     <div id="information" class= "label">
-       <p>Your order will be processed and delivered within one hour of placing.</p>
-       <p>Make sure you have the total amout for the order during order delivery delivery.</p>
-       <p>Incase of any comment of complaint, Please reach out to us as fast as possible.</p>
-       <p id="regards">Regards, Management</p>
-     </div>
-     <div class="choise">
-       <h2 class= "headings"><strong><u>YOUR ORDER IS:</u></strong></h2>
-       <div id="your-orders">
-         <table class="table table-sm  pizzatable">
-           <thead>
-             <tr>
-               <th scope="col" class="minicat">Name</th>
-               <th scope="col" class="minicat">Size</th>
-               <th scope="col" class="minicat">Crust</th>
-               <th scope="col" class="minicat">Topping</th>
-               <th scope="col" class="minicat">Total</th>
-             </tr>
-           </thead>
-           <tbody id="ordersmade">
-             <tr>
-               <td id="pizzaname"></td>
-               <td id="pizzasize"></td>
-               <td id="pizzacrust"></td>
-               <td id="pizzatopping"></td>
-               <td id="totals"></td>
-             </tr>
-           </tbody>
-         </table>
-         <p id="pizzatotal"></p>
-         <p id="totalbill"></p>
-         <p id="addedprice" class="minicat">Delivery will cost sh. 150</p>
-         <p id=" class="minicat" finalmessage"></p>
+     <label for="select" class= "label">Select Size</label>
+     <select class="browser-default custom-select custom-select-md mb-3" id="size">
+       <option selected value="0">Select size here</option>
+       <option value="large">Family -- Kshs. 2500</option>
+       <option value="large">Large -- Kshs. 1000</option>
+       <option value="medium">Medium -- Kshs. 700</option>
+       <option value="small">Small -- Kshs. 4500</option>
+     </select>
+     <label for="crust" class= "label">Choose your favorite Crust!</label>
+       <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+        <option selected value="0">Select your preferred crust!</option>
+         <option value="Crispy">Crispy -- sh. 200</option>
+         <option value="Stuffed">Stuffed -- sh. 150</option>
+         <option value="Gluten-free">Soft-- sh. 180</option>
+       </select>
+     <label for="Toppings" class="label">Select Your Toppings at sh. 50 each</label><br>
+       <div class="custom-control custom-checkbox custom-control-inline">
+         <input type="checkbox" class="custom-control-input" id="Guacomole" value="Guacomole" name="toppings">
+         <label class="custom-control-label" for="Guacomole">Guacomole</label>
        </div>
-     </div>
-       <div class= "pizzacheckoutdelivery">
-       <button class="btn btn-orange addPizza">Add Pizza</button>
-       <button class="btn btn-orange" id="checkout">Checkout</button>
-       <button class="btn btn-orange deliver">Home delivery?</button>
+       <div class="custom-control custom-checkbox custom-control-inline">
+         <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+         <label class="custom-control-label" for="Sausage">Sausage</label>
        </div>
-       <div class="delivery">
-         <form action="">
-           <div class="form-group">
-             <input type="text" id="name" class="form-control mb-3" placeholder="Name">
-             <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
-             <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
-             <button class="btn btn-orange" id="final-order">Place Order</button>
-           </div>
-         </form>
-     </div>
-   </div>
-</div>
+       <div class="custom-control custom-checkbox custom-control-inline">
+         <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+         <label class="custom-control-label" for="Bacon">Bacon</label>
+       </div>
+       <div class="custom-control custom-checkbox custom-control-inline">
+         <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+         <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
+       </div>
+       <br><br>
+     <button type="submit" class="btn btn-success proceed">Proceed</button>
+   </form>
+    </div>
+  </div>
 </div>
 
-       <div class="container-fluid bg-default text-center" id="contact">
-         <div class="controls-top ">
-           <h2>Contact Us</h2>
-         </div>
-       <div class="row" id="contactdetails">
-          <div class="col-md-1"></div>
-             <div class="col-md-3 text-justify">
-                      <h2>Location</h2>
-                      <p>Paleo Pizzeria</p>
-                      <p>Kiambu Mall | Kiambu Town</p>
-                      <p>00522,Kiambu</p>
-             </div>
-               <div class="col-md-3">
-                 <h2>Customer Care</h2>
-                       <p>njokifaith61@gmail.com</p>
-                       <p>Tell: 02200346476</p>
-                       <p>Phone: +254745678910</p>
-               </div>
-                 <div class="col-md-4">
-                   <div class="mapouter">
-                     <div class="gmap_canvas">
-                        <iframe width="350" height="180" id="gmap_canvas" src="https://maps.google.com/maps?q=kiambu%20mall&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                        </iframe>
-                     </div>
-                        <style>.mapouter{position:relative;text-align:right;height:180px;width:350px;}.gmap_canvas {overflow:hidden;background:none!important;height:180px;width:350px;}</style>
-                     </div>
+</div>
+</div>
+</div>
+<!--Footer Section-->
+<footer>
+  <section id="footer">
+      <div id="container">
+          <div class="row">
+              <div class="col-md-3 col-sm-3 text-center">
+                <h2>Location</h2>
+                <p>Paleo Pizzeria</p>
+                <p>Kiambu Mall | Kiambu Town</p>
+                <p>00522,Kiambu</p>
+              </div>
+              <div class="col-md-3 col-sm-3 text-center">
+                <h2>Customer Care</h2>
+                <p>njokifaith61@gmail.com</p>
+                <p>Tell: 02200346476</p>
+                <p>Phone: +254745678910</p>
+              </div>
+              <div class="col-md-3 col-sm-3 text-center">
+                <div class="mapouter">
+                  <div class="gmap_canvas">
+                     <iframe width="350" height="180" id="gmap_canvas" src="https://maps.google.com/maps?q=kiambu%20mall&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                     </iframe>
                   </div>
-                 <div class="col-md-1"></div>
+                     <style>.mapouter{position:relative;text-align:right;height:180px;width:350px;}.gmap_canvas {overflow:hidden;background:none!important;height:180px;width:350px;}</style>
                  </div>
-              <div class="row">
-                <div class="container-text-center-footer">
-                  <p>&copy; 2020 | Paleo Pizzeria</p>
-                </div>
+              </div>
+              <div class="col-md-3 col-sm-3 text-center">
+                 <p>&copy; 2020 | Paleo Pizzeria</p>
+               </div>
               </div>
           </div>
+      </div>
+  </div>
+</footer>
 
   </body>
 </html>
