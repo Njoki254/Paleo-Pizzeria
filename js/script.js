@@ -25,16 +25,20 @@ $(document).ready(function(){
     case "0":
       price =0;
     break;
+    case "family":
+       price = 2500;
+       console.log(price);
+     break;
     case "large":
-       price = 1200;
+       price = 1000;
        console.log(price);
      break;
      case "medium":
-       price = 850;
+       price = 700;
        console.log("The price is "+price);
      break;
      case "small":
-       price = 600;
+       price = 450;
        console.log(price);
      default:
        console.log("error");
@@ -49,7 +53,7 @@ $(document).ready(function(){
       case "Stuffed":
         crust_price = 250;
       break;
-      case "Gluten-free":
+      case "soft":
         crust_price = 180;
       break;
       default:
@@ -96,7 +100,7 @@ $(document).ready(function(){
         case "0":
           price =0;
         break;
-        case "Family":
+        case "family":
            price = 2500;
            console.log(price);
          break;

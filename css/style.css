@@ -182,6 +182,9 @@ border:i px solid white;
   text-decoration-color: yellow;
   margin: auto;
 }
+#PLACEYOURPIZZAORDER{
+  color:black;
+}
 .headings{
   font-size: 30px;
   color:silver;
