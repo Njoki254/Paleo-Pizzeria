@@ -12,8 +12,8 @@ body{
   }
 }
 #brand img{
-  height:50px;
-  width: 50px;
+  height:80px;
+  width: 80px;
 }
 
 header {
@@ -193,7 +193,7 @@ border:i px solid white;
   background-color: lightcyan;
   color:black;
 }
-#order{
+#ordersmade{
   margin: auto;
   text-align: left;
   background-image: url("../images/pizza3.jpg");

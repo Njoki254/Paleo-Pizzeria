@@ -163,11 +163,11 @@
 <!--Beginning of Order Section-->
 <div class="container" id="carousel">
   <div class="row">
-    <div class="col-md-12 col-sm-12" id="order">
+    <div class="col-md-12 col-sm-12" id="ordersmade">
       <h2 id="PLACEYOURPIZZAORDER" class= "headings"><u><strong>PLACE YOUR PIZZA ORDER</strong></u></h2>
         <form action="">
        <label for="select" class= "label">Select Your Flavor</label>
-       <select class="browser-default custom-select custom-select-md mb-3 name">
+       <select class="browser-default custom-select custom-select-md mb-3" id="pizzaname">
          <!-- <option selected value="choose">Choose your flavor</option> -->
          <option value="Peri Peri Chicken">Perri Perri Chicken</option>
          <option value="Barbeque">Barbeque Chicken</option>
@@ -177,7 +177,7 @@
          <option value="Hwaiian">Hawaiian</option>
        </select>
      <label for="select" class= "label">Select Size</label>
-     <select class="browser-default custom-select custom-select-md mb-3" id="size">
+     <select class="browser-default custom-select custom-select-md mb-3" id="size" id="pizzasize">
        <option selected value="0">Select size here</option>
        <option value="large">family -- Kshs. 2500</option>
        <option value="large">large -- Kshs. 1000</option>
@@ -185,15 +185,15 @@
        <option value="small">small -- Kshs. 4500</option>
      </select>
      <label for="crust" class= "label">Choose your favorite Crust!</label>
-       <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+       <select class="browser-default custom-select custom-select-md mb-3" id="pizzacrust" id="crust">
         <option selected value="0">Select your preferred crust!</option>
          <option value="Crispy">Crispy -- sh. 200</option>
          <option value="Stuffed">Stuffed -- sh. 150</option>
          <option value="Gluten-free">Soft-- sh. 180</option>
        </select>
      <label for="Toppings" class="label">Select Your Toppings at sh. 50 each</label><br>
-       <div class="custom-control custom-checkbox custom-control-inline">
-         <input type="checkbox" class="custom-control-input" id="Guacomole" value="Guacomole" name="toppings">
+       <div class="custom-control custom-checkbox custom-control-inline" id="pizzatopping">
+         <input type="checkbox" class="custom-control-input" id="Guacomole" value="Guacomole" name="toppings" >
          <label class="custom-control-label" for="Guacomole">Guacomole</label>
        </div>
        <div class="custom-control custom-checkbox custom-control-inline">
@@ -211,6 +211,12 @@
        <br><br>
      <button type="submit" class="btn btn-success proceed">Proceed</button>
    </form>
+	 <div class="form-group">
+		 <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+		 <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+		 <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+		 <button class="btn btn-success" id="order-confirmation">Place Order</button>
+	 </div>
     </div>
   </div>
 </div>

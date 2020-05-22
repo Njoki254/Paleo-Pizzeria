@@ -1,4 +1,4 @@
-}var price , crust_price, topping_price ;
+var price , crust_price, topping_price ;
 let total = 0;
 function Getpizza( name,size,crust,topping, total ){
   this.name = name;
@@ -11,6 +11,11 @@ function Getpizza( name,size,crust,topping, total ){
 
 // proceed button
 $(document).ready(function(){
+  // $("button.proceed").click(function(){
+  //   $("button.proceed").hide();
+  //   $("#information").hide();
+  //   $("div.choise").slideDown(1000);
+  // });
   $("button.proceed").click(function(event){
    let pname = $(".name option:selected").val();
    let psize = $("#size option:selected").val();
@@ -19,26 +24,22 @@ $(document).ready(function(){
    $.each($("input[name='toppings']:checked"), function(){
        ptopping.push($(this).val());
    });
-   console.log(ptopping.join(", "));
+   console.log(ptoppings.join(", "));
 
    switch(psize){
     case "0":
       price =0;
     break;
-    case "family":
-       price = 2500;
-       console.log(price);
-     break;
     case "large":
-       price = 1000;
+       price = 1200;
        console.log(price);
      break;
      case "medium":
-       price = 700;
+       price = 850;
        console.log("The price is "+price);
      break;
      case "small":
-       price = 450;
+       price = 600;
        console.log(price);
      default:
        console.log("error");
@@ -53,7 +54,7 @@ $(document).ready(function(){
       case "Stuffed":
         crust_price = 250;
       break;
-      case "soft":
+      case "Gluten-free":
         crust_price = 180;
       break;
       default:
@@ -100,20 +101,16 @@ $(document).ready(function(){
         case "0":
           price =0;
         break;
-        case "family":
-           price = 2500;
-           console.log(price);
-         break;
         case "large":
-           price = 1000;
+           price = 1200;
            console.log(price);
          break;
          case "medium":
-           price = 700;
+           price = 850;
            console.log("The price is "+price);
          break;
          case "small":
-           price = 4500;
+           price = 600;
            console.log(price);
          default:
            console.log("error");
@@ -128,14 +125,14 @@ $(document).ready(function(){
           case "Stuffed":
             crust_price = 150;
           break;
-          case "soft":
+          case "Soft":
             crust_price = 180;
           break;
           default:
             console.log("No price");
         }
         let topping_value = ptopping.length*50;
-        console.log("toppins value" + topping_value);
+        console.log("toppings value" + topping_value);
         total = price + crust_price + topping_value;
         console.log(total);
 
@@ -163,7 +160,7 @@ $(document).ready(function(){
     // home delivery button
     $("button.deliver").click(function(){
       $(".pizzatable").hide();
-      $(".choise h2").hide();
+      $(".choice h2").hide();
       $(".delivery").slideDown(1000);
       $("#addedprice").hide();
       $("button.deliver").hide();
@@ -174,12 +171,12 @@ $(document).ready(function(){
     });
 
     // when one clicks place order button
-    $("button#final-order").click(function(event){
+    $("button#order-confirmation").click(function(event){
       event.preventDefault();
 
       $("#pizzatotal").hide();
       $(".delivery").hide();
-      $("button#final-order").hide();
+      $("button#order-confirmation").hide();
       let deliceryamount= checkoutTotal+150;
       console.log("Final Bill is: "+deliceryamount);
       let person = $("input#name").val();
@@ -195,7 +192,7 @@ $(document).ready(function(){
       else {
         alert("Please fill in the details for delivery!");
         $(".delivery").show();
-        $("button#final-order").show();
+        $("button#order-confirmation").show();
       }
     });
    event.preventDefault();
