@@ -43,7 +43,7 @@
 						<a href="#MENU" id="instructions"><strong>Menu</strong></a>
 					</li>
           <li>
-						<a href="#PLACEYOURPIZZAORDER"id="play"><strong>Order</strong></a>
+						<a href="#make-order"id="play"><strong>Order</strong></a>
 					</li>
 					<li>
 						<a href="#footer" id="instructions"><strong>Contact</strong></a>
@@ -195,9 +195,9 @@
 						 <label for="crust">Choose your favorite Crust!</label>
 							 <select class="browser-default custom-select custom-select-md mb-3" id="topping">
 									 <option selected value="0">Select your preferred crust!</option>
-								 <option value="Guacomole">Crispy -- Kshs. 150</option>
-								 <option value="Sausage">Stuffed -- Kshs. 100</option>
-								 <option value="Mushroom">Regular-- Kshs. 50</option>
+								 <option value="crispy">Crispy -- Kshs. 150</option>
+								 <option value="stuffed">Stuffed -- Kshs. 100</option>
+								 <option value="regular">Regular-- Kshs. 50</option>
 							 </select>
 					 <label for="Toppings">Select Your Toppings at Kshs 100</label><br>
 						 <div class="custom-control custom-checkbox custom-control-inline">
@@ -217,13 +217,13 @@
 							 <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
 						 </div>
 						 <br><br>
-					 <button type="submit" class="btn btn-success">Add to Cart</button>
+					 <button type="submit" class="btn btn-success" id="addtoCart">Add to Cart</button>
 
 				 </form>
 			 </div>
 
-					  <button type="submit" class="btn btn-success">Add Pizza</button>
-					  <button type="submit" class="btn btn-success">Checkout</button>
+					  <button type="submit" class="btn btn-success" id="addPizza">Add Pizza</button>
+					  <button type="submit" class="btn btn-success" id="checkout">Checkout</button>
 
 				 </div>
 				 <div class="delivery">
@@ -231,9 +231,9 @@
 							 <div class="form-group">
 								 <input type="text" id="name" class="form-control mb-3" placeholder="Name">
 								 <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
-								 <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+								 <input type="text" id="address" class="form-control mb-3" placeholder="Location for delivery">
 
-								 <button class="btn btn-success" id="final-order">Confirm Order</button>
+								 <button class="btn btn-success" id="confirm">Confirm Order</button>
 							 </div>
 						 </form>
 				 </div>
@@ -242,7 +242,7 @@
 </div>
 </div>
 
-<script src="js/mdb.min.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -286,5 +286,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
-  </body>
 </html>
