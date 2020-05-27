@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.btn-success{
+  height: 70px;
+  width: 120px;
+}
 body{
   background-color: lightcyan;
   font-size: 20px;
