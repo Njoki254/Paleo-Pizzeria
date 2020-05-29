@@ -11,7 +11,7 @@
 
 
     <!--Personal JS-->
-    <script src="js/script.js"></script>
+
 
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -26,13 +26,14 @@
     <!--Fontawesome-->
     <script src="https://kit.fontawesome.com/a097096ef6.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		  <script src="js/script.js"></script>
 </head>
   <body>
     <header>
 		<div class="header">
 			<img id="brand" alt="" src="images/logo.png">&nbsp;&nbsp;&nbsp;
 			<div class="logo">
-				<h4 id="logo"><strong>Paleo Pizza</strong></h4>
+				<h4 id="logo"><strong>Paleo Pizzeria</strong></h4>
 			</div>
 			<nav class="container-fluid">
 				<ul>
@@ -170,6 +171,7 @@
 						 <label for="select">Select your Pizza</label>
 						 <select class="browser-default custom-select custom-select-md mb-3 name" id="type">
 							 <!-- <option selected value="choose">Choose your flavor</option> -->
+							  <option selected value="0">Select the type of Pizza</option>
 							 <option value="Peri Peri Chicken">Peri Peri Chicken</option>
 							 <option value="Hawaiian">Hawaiian</option>
 							 <option value="Barbecue">Barbecue Chicken</option>
@@ -179,8 +181,8 @@
 						 </select>
 					 <label for="select">Select Size</label>
 					 <select class="browser-default custom-select custom-select-md mb-3" id="size">
-						 <option selected value="0">Select size here</option>
-						 <option value="large">Family -- Kshs. 2500</option>
+						  <option selected value="0">Select your preferred size</option>
+						 <option value="family">Family -- Kshs. 2500</option>
 						 <option value="large">Large -- Kshs. 1000</option>
 						 <option value="medium">Medium -- Kshs. 700</option>
 						 <option value="small">Small -- Kshs. 450</option>
@@ -192,38 +194,21 @@
 							 <option value="Stuffed">Stuffed -- Kshs. 150</option>
 							 <option value="Regular">Regular-- Kshs. 0</option>
 						 </select>
-						 <label for="crust">Choose your favorite Crust!</label>
+						 <label for="crust">Choose your favorite Topping!</label>
 							 <select class="browser-default custom-select custom-select-md mb-3" id="topping">
-									 <option selected value="0">Select your preferred crust!</option>
-								 <option value="crispy">Crispy -- Kshs. 150</option>
-								 <option value="stuffed">Stuffed -- Kshs. 100</option>
-								 <option value="regular">Regular-- Kshs. 50</option>
+									 <option selected value="0">Select your preferred Topping!</option>
+								 <option value="Guacomole">Guacomole -- Kshs. 150</option>
+								 <option value="Sausage">Sausage -- Kshs. 100</option>
+								 <option value="Mushroom">Mushrooms-- Kshs. 50</option>
 							 </select>
-					 <label for="Toppings">Select Your Toppings at Kshs 100</label><br>
-						 <div class="custom-control custom-checkbox custom-control-inline">
-							 <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings" id="topping" placeholder="Type of Pizza">
-							 <label class="custom-control-label" for="Sausage">Sausage</label>
-						 </div>
-						 <div class="custom-control custom-checkbox custom-control-inline">
-							 <input type="checkbox" class="custom-control-input" id="Guacomole" value="Guacomole" name="toppings" id="topping">
-							 <label class="custom-control-label" for="Guacomole">Guacomole</label>
-						 </div>
-						 <div class="custom-control custom-checkbox custom-control-inline">
-							 <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings" id="topping">
-							 <label class="custom-control-label" for="Bacon">Bacon</label>
-						 </div>
-						 <div class="custom-control custom-checkbox custom-control-inline">
-							 <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings" id="topping">
-							 <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
-						 </div>
-						 <br><br>
-					 <button type="submit" class="btn btn-success" id="addtoCart">Add to Cart</button>
+
+					 <button type="submit" class="btn btn-success" id="addToCart-btn">Add to Cart</button>
 
 				 </form>
 			 </div>
 
-					  <button type="submit" class="btn btn-success" id="addPizza">Add Pizza</button>
-					  <button type="submit" class="btn btn-success" id="checkout">Checkout</button>
+
+					  <button type="submit" class="btn btn-success" id="checkout-btn">Checkout</button>
 
 				 </div>
 				 <div class="delivery">
@@ -231,9 +216,9 @@
 							 <div class="form-group">
 								 <input type="text" id="name" class="form-control mb-3" placeholder="Name">
 								 <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
-								 <input type="text" id="address" class="form-control mb-3" placeholder="Location for delivery">
+								 <input type="text" id="address" class="form-control mb-3" placeholder="Address">
 
-								 <button class="btn btn-success" id="confirm">Confirm Order</button>
+								 <button class="btn btn-success" id="confirm-btn">Confirm Order</button>
 							 </div>
 						 </form>
 				 </div>
@@ -275,13 +260,12 @@
               </div>
               <div class="col-md-3 col-sm-3 text-center">
                  <p>&copy; 2020 | Paleo Pizzeria</p>
-               </div>
+              </div>
               </div>
           </div>
       </div>
   </div>
 </footer>
-<script src="js/mdb.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
